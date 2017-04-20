@@ -1,6 +1,6 @@
 <?php
 
-namespace backend\modules\transliter\models;
+namespace Sirgalas\yii2_edit_translation\models;
 
 use Yii;
 use Zelenin\yii\modules\I18n\models\SourceMessage;
@@ -21,12 +21,12 @@ class Transliter extends SourceMessage
     public function attributeLabels()
     {
         return [
-            'id'            => Yii::t('app','ID'),
-            'category'      => Yii::t('app','Category'),
-            'message'       => Yii::t('app','Message'),
-            'status'        => Yii::t('app','Translation status'),
-            'language'      => Yii::t('app','language'),
-            'transliter'    => Yii::t('app','transliter'),
+            'id'            => Module::t('ID'),
+            'category'      => Module::t('Category'),
+            'message'       => Module::t('Message'),
+            'status'        => Module::t('Translation status'),
+            'language'      => Module::t('language'),
+            'transliter'    => Module::t('transliter'),
         ];
     }
 

@@ -7,7 +7,7 @@ use kartik\grid\GridView;
 /* @var $searchModel backend\models\SourceMessageSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Source Messages';
+$this->title = Module::t('Simple translations');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="source-message-index">
@@ -16,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a(Yii::t('app','Create'), ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a(Modul::t('Create'), ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= GridView::widget([
@@ -32,7 +32,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'attribute' =>'category',
                 'editableOptions'=> function ($model, $key, $index) {
                     return [
-                        'header'=>Yii::t('app','Category'),
+                        'header'=>Module::t('сategory'),
                         'size'=>'md',
                         'inputType'=>\kartik\editable\Editable::INPUT_TEXT,
                     ];
@@ -44,7 +44,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'format'=>      'ntext',
                 'editableOptions'=> function ($model, $key, $index) {
                     return [
-                        'header'=>Yii::t('app','Message'),
+                        'header'=>YModule::t('message'),
                         'size'=>'md',
                         'inputType'=>\kartik\editable\Editable::INPUT_TEXT,
                     ];
@@ -53,7 +53,7 @@ $this->params['breadcrumbs'][] = $this->title;
             [
                 'class'=>'kartik\grid\EditableColumn',
                 'attribute' =>  'translation',
-                'header'    =>  Yii::t('app','translation'),
+                'header'    =>  Module::t('translation'),
                 'format'    =>  'raw',
                 'value'     =>  function($model){
                     return $model->getMessagesModel($model->id);
@@ -63,7 +63,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         'displayValue'  => $model->getMessagesModel($model->id),
                         'value'         =>  $model->getMessagesModel($model->id),
                         'valueIfNull'   =>  Yii::t('app','Not value'),
-                        'header'=>Yii::t('app','translation'),
+                        'header'=>Module::t('translation'),
                         'size'=>'md',
                         'inputType'=>\kartik\editable\Editable::INPUT_TEXT,
                     ];
@@ -72,7 +72,7 @@ $this->params['breadcrumbs'][] = $this->title;
             [
                 'class'=>'kartik\grid\EditableColumn',
                 'attribute' =>  'language',
-                'header'    =>  Yii::t('app','language'),
+                'header'    =>  Module::t('language'),
                 'format'    =>  'raw',
                 'value'     =>  function($model){
                     return $model->getLanguage($model->id);
@@ -82,7 +82,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         'displayValue'  => $model->getLanguage($model->id),
                         'value'         =>  $model->getLanguage($model->id),
                         'valueIfNull'   =>  Yii::t('app','Not value'),
-                        'header'=>Yii::t('app','translation'),
+                        'header'=>Module::t('translation'),
                         'size'=>'md',
                         'inputType'=>\kartik\editable\Editable::INPUT_TEXT,
                     ];

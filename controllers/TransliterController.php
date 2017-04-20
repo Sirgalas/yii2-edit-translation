@@ -1,11 +1,11 @@
 <?php
 
-namespace backend\modules\transliter\controllers;
+namespace Sirgalas\yii2_edit_translation\controllers;
 
 use Yii;
-use backend\modules\transliter\models\Transliter;
-use backend\modules\transliter\models\Massagesmodules;
-use backend\modules\transliter\models\TransliterSearch;
+use Sirgalas\yii2_edit_translation\Transliter;
+use Sirgalas\yii2_edit_translation\Massagesmodules;
+use Sirgalas\yii2_edit_translation\TransliterSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;

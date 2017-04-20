@@ -1,6 +1,6 @@
 <?php
 
-namespace backend\modules\transliter;
+namespace Sirgalas\yii2_edit_translation;
 
 /**
  * transliter module definition class
@@ -10,7 +10,10 @@ class Module extends \yii\base\Module
     /**
      * @inheritdoc
      */
-    public $controllerNamespace = 'backend\modules\transliter\controllers';
+    public static function t($message, $params = [], $language = null)
+    {
+        return Yii::t('sergalas/i18n', $message, $params, $language);
+    }
 
     /**
      * @inheritdoc

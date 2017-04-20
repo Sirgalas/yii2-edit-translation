@@ -5,10 +5,10 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model Zelenin\yii\modules\I18n\models\SourceMessage */
 
-$this->title = 'Update Source Message: ' . $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'Source Messages', 'url' => ['index']];
+$this->title = Module::t('Update') . $model->id;
+$this->params['breadcrumbs'][] = ['label' => Module::t('Simple translations'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->id, 'url' => ['view', 'id' => $model->id]];
-$this->params['breadcrumbs'][] = 'Update';
+$this->params['breadcrumbs'][] = Module::t('Update');
 ?>
 <div class="source-message-update">
 

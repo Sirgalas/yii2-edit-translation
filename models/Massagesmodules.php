@@ -6,7 +6,7 @@
  * Time: 14:39
  */
 
-namespace backend\modules\transliter\models;
+namespace Sirgalas\yii2_edit_translation\models;
 
 use Zelenin\yii\modules\I18n\models\Message;
 

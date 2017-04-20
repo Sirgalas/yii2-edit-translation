@@ -6,8 +6,8 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model Zelenin\yii\modules\I18n\models\SourceMessage */
 
-$this->title = 'Create Source Message';
-$this->params['breadcrumbs'][] = ['label' => 'Source Messages', 'url' => ['index']];
+$this->title = Module::t('Create');
+$this->params['breadcrumbs'][] = ['label' => Module::t('Simple translations'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="source-message-create">
