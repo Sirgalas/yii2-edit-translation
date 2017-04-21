@@ -44,7 +44,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'format'=>      'ntext',
                 'editableOptions'=> function ($model, $key, $index) {
                     return [
-                        'header'=>YModule::t('message'),
+                        'header'=>Module::t('message'),
                         'size'=>'md',
                         'inputType'=>\kartik\editable\Editable::INPUT_TEXT,
                     ];
