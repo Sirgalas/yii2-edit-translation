@@ -3,9 +3,9 @@
 namespace sirgalas\yii2_edit_translation\controllers;
 
 use Yii;
-use Sirgalas\yii2_edit_translation\Transliter;
-use Sirgalas\yii2_edit_translation\Massagesmodules;
-use Sirgalas\yii2_edit_translation\TransliterSearch;
+use sirgalas\yii2_edit_translation\Transliter;
+use sirgalas\yii2_edit_translation\Massagesmodules;
+use sirgalas\yii2_edit_translation\TransliterSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
