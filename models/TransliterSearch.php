@@ -1,6 +1,6 @@
 <?php
 
-namespace Sirgalas\yii2_edit_translation\models;
+namespace sirgalas\yii2_edit_translation\models;
 
 use Yii;
 use yii\base\Model;

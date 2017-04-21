@@ -1,6 +1,6 @@
 <?php
 
-namespace Sirgalas\yii2_edit_translation\controllers;
+namespace sirgalas\yii2_edit_translation\controllers;
 
 use Yii;
 use Sirgalas\yii2_edit_translation\Transliter;
