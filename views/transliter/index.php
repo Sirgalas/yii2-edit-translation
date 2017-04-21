@@ -2,7 +2,7 @@
 
 use yii\helpers\Html;
 use kartik\grid\GridView;
-
+use sirgalas\translation\Module;
 /* @var $this yii\web\View */
 /* @var $searchModel backend\models\SourceMessageSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
@@ -16,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a(Modul::t('Create'), ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a(Module::t('Create'), ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= GridView::widget([

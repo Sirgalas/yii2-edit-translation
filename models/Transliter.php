@@ -5,6 +5,7 @@ namespace sirgalas\translation\models;
 use Yii;
 use Zelenin\yii\modules\I18n\models\SourceMessage;
 use Zelenin\yii\modules\I18n\models\Message;
+use sirgalas\translation\Module;
 class Transliter extends SourceMessage
 {
     public $language;

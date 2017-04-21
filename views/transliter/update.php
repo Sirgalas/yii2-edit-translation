@@ -1,7 +1,7 @@
 <?php
 
 use yii\helpers\Html;
-
+use sirgalas\translation\Module;
 /* @var $this yii\web\View */
 /* @var $model Zelenin\yii\modules\I18n\models\SourceMessage */
 
