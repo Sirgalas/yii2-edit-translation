@@ -1,6 +1,6 @@
 <?php
 
-namespace sirgalas\yii2_edit_translation\models;
+namespace sirgalas\translation\models;
 
 use Yii;
 use Zelenin\yii\modules\I18n\models\SourceMessage;

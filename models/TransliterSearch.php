@@ -1,12 +1,12 @@
 <?php
 
-namespace sirgalas\yii2_edit_translation\models;
+namespace sirgalas\translation\models;
 
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use sirgalas\yii2_edit_translation\models\Transliter;
-use sirgalas\yii2_edit_translation\models\Massagesmodules;
+use sirgalas\translation\models\Transliter;
+use sirgalas\translation\models\Massagesmodules;
 /**
  * SourceMessageSearch represents the model behind the search form of `Zelenin\yii\modules\I18n\models\SourceMessage`.
  */

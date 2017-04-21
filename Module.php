@@ -1,6 +1,6 @@
 <?php
 
-namespace sirgalas\yii2_edit_translation;
+namespace sirgalas\translation;
 use Yii;
 
 /**
