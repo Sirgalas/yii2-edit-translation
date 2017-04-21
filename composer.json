@@ -36,5 +36,5 @@
         "psr-4": {
             "Sergalas\\yii2_edit_translation": ""
         }
-    },
+    }
 }
