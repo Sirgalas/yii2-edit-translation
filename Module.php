@@ -1,6 +1,6 @@
 <?php
 
-namespace Sirgalas\yii2_edit_translation;
+namespace sirgalas\yii2_edit_translation;
 
 /**
  * transliter module definition class
