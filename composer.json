@@ -34,7 +34,7 @@
     },
     "autoload": {
         "psr-4": {
-            "sirgalas\\yii2-edit-translation\\": ""
+            "sirgalas\\yii2_edit_translation\\": ""
         }
     }
 }
