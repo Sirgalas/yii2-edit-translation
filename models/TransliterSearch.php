@@ -5,8 +5,8 @@ namespace sirgalas\yii2_edit_translation\models;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use backend\modules\transliter\models\Transliter;
-use backend\modules\transliter\models\Massagesmodules;
+use sirgalas\yii2_edit_translation\models\Transliter;
+use sirgalas\yii2_edit_translation\models\Massagesmodules;
 /**
  * SourceMessageSearch represents the model behind the search form of `Zelenin\yii\modules\I18n\models\SourceMessage`.
  */
