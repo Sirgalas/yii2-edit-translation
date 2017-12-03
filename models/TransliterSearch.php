@@ -51,7 +51,11 @@ class TransliterSearch extends Transliter
 
         if(isset($params['TransliterSearch']['translation'])){
             if($params['TransliterSearch']['translation']!=''){
-                $translation=Massagesmodules::findOne(['translation'=>$params['TransliterSearch']['translation']]);
+                $translations=Massagesmodules::find()->andFilterWhere(['like','translation', $params['TransliterSearch']['translation']])->all();
+                $translation=array();
+                foreach ($translations as $translat) {
+                	$translation[]=$translat->id;
+                }
             }
         }
         // add conditions that should always apply here
@@ -79,7 +83,7 @@ class TransliterSearch extends Transliter
             $query->andFilterWhere(['id' => $language->id]);
         }
         if(isset($translation)) {
-            $query->andFilterWhere(['id' => $translation->id]);
+            $query->andFilterWhere(['in', 'id', $translation]);
         }
 
         return $dataProvider;
