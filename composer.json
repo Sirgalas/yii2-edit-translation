@@ -28,9 +28,8 @@
     	
         "yiisoft/yii2": "~2",
         "zelenin/yii2-i18n-module": "dev-master",
-		"kartik-v/yii2-grid": "@dev",
+	"kartik-v/yii2-grid": "@dev",
         "kartik-v/yii2-editable": "@dev",
-        "kartik-v/yii2-mpdf": "dev-master"
     },
     "autoload": {
         "psr-4": {
